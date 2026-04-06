@@ -20,3 +20,140 @@ header{
     padding: 50px 20px;
     border-bottom: 2px solid var(--primary);
 }
+
+.container{
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section, .card{
+    background-color: var(--card-bg);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+h2{
+    color: var(--primary);
+    border-left: 5px solid var(--primary);
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-grid span{
+    background-color: var(--primary);
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.skills-grid span.soft-skill{
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.text-secondary{
+    color: #a0a0a0;
+    font-weight: 3000;
+}
+
+.experience-list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.experience-list li{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary);
+    color: var(--text-color);
+}
+
+.experience-list li span{
+    margin-right: 10px;
+}
+
+h3.fw-bold{
+    letter-spacing: 0.5px;
+}
+
+.education-item{
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--primary);
+}
+
+.education-item h3{
+    color: #ffffff;
+}
+
+.education-item p{
+    color: #b0b0b0;
+    margin-bottom: 0;
+}
+
+.estado-cursada{
+    color: var(--primary);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-tittle{
+    color: var(--primary);
+}
+
+.card-text{
+    color: #b0b0b0;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    background: #000000;
+    color: white;
+}
+
+footer a{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.btn-descarga{
+    display: inline-block;
+    padding: 12px 25 px;
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-descarga:hover{
+    background-color: var(--primary);
+    color: #121212;
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.4);
+    transform: scale(1.05);
+}
