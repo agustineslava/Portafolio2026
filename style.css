@@ -1,149 +1,162 @@
-:root{
-    --primary: #00a8ff;
-    --bg-dark: #121212;
-    --card-bg: #1e1e1e;
-    --text-color: #e0e0e0;
+:root {
+    --primary: #00a8ff;       /* El azul brillante para los bordes y títulos */
+    --bg-dark: #121212;      /* Fondo principal oscuro */
+    --card-bg: #1e1e1e;      /* Fondo de las secciones */
+    --text-color: #e0e0e0;   /* Texto claro */
 }
 
-body{
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg-dark);
-  color: var(--text-color);
-  margin: 0;
-  line-height: 1.6;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-dark) !important;
+    color: var(--text-color) !important;
+    margin: 0;
+    line-height: 1.6;
 }
 
-header{
-    background: linear-gradient(to right, #1a2a6c, #000000);
-    color: white;
+header {
+    background: linear-gradient(to right, #1a2a6c, #000000) !important;
+    color: white !important;
     text-align: center;
     padding: 50px 20px;
     border-bottom: 2px solid var(--primary);
 }
 
-.container{
+.container {
     max-width: 850px;
     margin: 20px auto;
     padding: 20px;
+    
 }
 
-section, .card{
-    background-color: var(--card-bg);
+section, .card {
+    background-color: var(--card-bg) !important;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5) !important;
+    border: 1px solid #333 !important; /* Borde sutil para separar del fondo */
 }
 
-h2{
-    color: var(--primary);
-    border-left: 5px solid var(--primary);
+/* Este es el cambio que pediste para el costado del recuadro */
+h2 {
+    color: var(--primary) !important;
+    border-left: 5px solid var(--primary) !important; /* La barra lateral azul */
     padding-left: 15px;
     margin-top: 0;
 }
 
-.skills-grid{
+/* Esto asegura que las cajas de habilidades usen el flexbox que definiste */
+.skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.skills-grid span{
-    background-color: var(--primary);
-    color: #000000;
+/* Estilo para habilidades blandas (con borde en vez de fondo sólido) */
+/* Estilo de los recuadros de colores (Técnicas) */
+.skills-grid span {
+    background-color: var(--primary) !important; /* El azul brillante que definiste */
+    color: #000000 !important; /* Texto negro para que resalte sobre el azul */
     padding: 10px 20px;
     border-radius: 6px;
     font-weight: bold;
     font-size: 0.95rem;
     display: inline-block;
-    transition: transform 0.2s;
+    transition: transform 0.2s; /* Efecto visual al pasar el mouse */
 }
 
-.skills-grid span.soft-skill{
-    background-color: transparent;
-    border: 2px solid var(--primary);
-    color: var(--primary);
+/* Estilo específico para las Habilidades Blandas (Solo borde, sin fondo sólido) */
+.skills-grid span.soft-skill {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    border: 2px solid var(--primary) !important;
 }
 
-.text-secondary{
-    color: #a0a0a0;
-    font-weight: 3000;
+/* Mejora para los títulos secundarios */
+/* Color para los subtítulos (Programación, Soporte, etc) */
+.text-secondary {
+    color: #a0a0a0 !important;
+    font-weight: 300;
 }
 
-.experience-list{
-    padding-left: 0;
+/* Estilo para la lista de experiencia */
+.experience-list {
     list-style: none;
+    padding-left: 0;
 }
 
-.experience-list li{
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 12px 15px;
+.experience-list li {
+    background-color: rgba(255, 255, 255, 0.05); /* Un fondo muy sutil para cada ítem */
     margin-bottom: 10px;
+    padding: 12px 15px;
     border-radius: 6px;
-    border-left: 3px solid var(--primary);
+    border-left: 3px solid var(--primary); /* Una línea azul a la izquierda */
     color: var(--text-color);
 }
 
-.experience-list li span{
+.experience-list li span {
     margin-right: 10px;
 }
 
-h3.fw-bold{
+/* Para que los títulos de las empresas resalten */
+h3.fw-bold {
     letter-spacing: 0.5px;
 }
 
-.education-item{
-    background: rgba(255, 255, 255, 0.03);
-    border-left: 4px solid var(--primary);
+.educacion-item {
+    background: rgba(255, 255, 255, 0.03) !important; /* El fondo sutil que tenías */
+    border-left: 4px solid var(--primary); /* Un detalle visual para resaltar */
 }
 
-.education-item h3{
-    color: #ffffff;
+.educacion-item h3 {
+    color: #ffffff !important; /* Forzamos el blanco para el título */
 }
 
-.education-item p{
-    color: #b0b0b0;
+.educacion-item p {
+    color: #b0b0b0 !important; /* El gris secundario */
     margin-bottom: 0;
 }
 
-.estado-cursada{
-    color: var(--primary);
+/* El texto "En curso" */
+.estado-cursada {
+    color: var(--primary) !important;
     font-weight: bold;
     font-style: italic;
 }
 
-.card-tittle{
-    color: var(--primary);
+/* Estilo para los títulos de las Cards de certificación */
+.card-title {
+    color: var(--primary) !important;
 }
 
-.card-text{
-    color: #b0b0b0;
+.card-text {
+    color: #b0b0b0 !important;
 }
 
-footer{
+footer {
     text-align: center;
     padding: 30px;
-    background: #000000;
+    background: #000000 !important;
     color: white;
 }
 
-footer a{
-    color: var(--primary);
+footer a {
+    color: var(--primary) !important;
     text-decoration: none;
 }
 
-html{
+/* Suavizar el scroll al usar la Navbar */
+html {
     scroll-behavior: smooth;
 }
-
-.btn-descarga{
+ 
+.btn-descarga {
     display: inline-block;
-    padding: 12px 25 px;
+    padding: 12px 25px;
     background-color: transparent;
-    color: var(--primary);
+    color: var(--primary) !important;
     border: 2px solid var(--primary);
-    border-radius: 30px;
+    border-radius: 30px; /* Bordes redondeados modernos */
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -151,9 +164,9 @@ html{
     letter-spacing: 1px;
 }
 
-.btn-descarga:hover{
+.btn-descarga:hover {
     background-color: var(--primary);
-    color: #121212;
-    box-shadow: 0 0 20px rgba(0, 168, 255, 0.4);
-    transform: scale(1.05);
+    color: #121212 !important; /* El texto se vuelve oscuro al pasar el mouse */
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.4); /* Efecto de brillo azul */
+    transform: scale(1.05); /* Se agranda apenas un poquito */
 }
