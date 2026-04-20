@@ -250,4 +250,13 @@ html {
     font-weight: bold;
 }
 
-.bad
+.badge-tech{
+    background-color: rgba(0, 168, 255, 0.1);
+    color: var(--primary);
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    font-weight: bold;
+}

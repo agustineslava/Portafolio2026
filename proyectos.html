@@ -11,7 +11,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow py-4">
         <div class="container-fluid px-5">
-            <a class="navbar-brand fw-bold" href="index.html">Agustín Eslava | Portafolio</a>
+            <a class="navbar-brand fw-bold" href="index.html">Agustín Eslava | Proyectos</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,7 +21,7 @@
                     <li class="nav-item"><a class="nav-link" href="experiencia.html" data-section="nav" data-value="experiencia">Experiencia</a></li>
                     <li class="nav-item"><a class="nav-link" href="educacion.html" data-section="nav" data-value="educacion">Educación</a></li>
                     <li class="nav-item"><a class="nav-link" href="habilidades.html" data-section="nav" data-value="habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="portafolio.html" data-section="nav" data-value="portafolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="proyectos.html" data-section="nav" data-value="proyectos">Proyectos</a></li>
                     <li class="nav-item ms-lg-3">
                         <button id="btn-idioma" class="btn btn-outline-info btn-sm border-0 d-flex align-items-center gap-2"></button>
                     </li>
@@ -31,17 +31,33 @@
     </nav>
 
 
-    <div class="container my-5">
-        <section class="p-5 shadow-sm rounded-3">
-            <h2 class="display-6 mb-4" data-section="projets" data-value="titulo-pag">Mis Proyectos</h2>
-            <div class="row g-4"></div>
-        </section>
-    </div>
-
     <header>
         <h1 class="display-4 fw-bold">Agustín Eslava</h1>
         <p class="lead" data-section="header" data-value="subtitulo">Analista en Sistemas (en curso) | Técnico En Reparación de Electrodomésticos</p>
     </header>
+
+
+  <div class="container my-5">
+        <section class="p-5 shadow-sm rounded-3">
+            <h2 class="display-6 mb-4" data-section="projects" data-value="titulo-pag">Mis Proyectos</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-proyecto">
+                        <img src="proyectos/gestion.png" class="card-img-top" alt="Proyecto Gestion">
+                        <div class="card-body">
+                            <h5 class="card-title" data-section="projects" data-value="p1-titulo">Sistema de Gestion</h5>
+                            <p class="card-text" data-section="projects" data-value="p1-desc">Control de stock para Service Integral</p>
+                            <div class="tags-proyectos">
+                                <span class="badge-tech">JavaScript</span>
+                                <span class="badge-tech">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </section>
+    </div>
 
 
     <footer class="bg-dark text-white text-center py-4 mt-5">
