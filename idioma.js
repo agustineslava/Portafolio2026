@@ -5,7 +5,8 @@ const textos = {
             "experiencia": "Experiencia",
             "educacion": "Educación",
             "habilidades": "Habilidades",
-            "proyectos": "Proyectos"
+            "proyectos": "Proyectos",
+            "brand": "Agustín Eslava | Portafolio"
         },
         "header": {
             "subtitulo": "Analista en Sistemas (en curso) | Técnico En Reparación de Electrodomésticos",
@@ -57,7 +58,8 @@ const textos = {
             "experiencia": "Experience",
             "educacion": "Education",
             "habilidades": "Skills",
-            "proyectos": "Projects"
+            "proyectos": "Projects",
+            "brand": "Agustín Eslava | Portfolio"
         },
         "header": {
             "subtitulo": "Systems Analyst (in progress) | Appliance Repair Technician",
