@@ -28,7 +28,8 @@ const textos = {
         "edu": {
             "titulo-acad": "Formación Académica",
             "carrera": "Analista de Sistemas",
-            "estado": "En curso",
+            "estado_finalizado": "2 años",
+            "estado": "En curso, el último año de la carrera",
             "titulo-cursos": "Cursos y Certificaciones",
             "cert1-info": "Udemy | Finalizado Septiembre 2025",
             "cert2-info": "Udemy | Finalizado Septiembre 2024",
@@ -86,7 +87,8 @@ const textos = {
         "edu": {
             "titulo-acad": "Academic Background",
             "carrera": "Systems Analyst",
-            "estado": "In progress",
+            "estado_finalizado": "2 years",
+            "estado": "In progress - last year of the degree",
             "titulo-cursos": "Courses and Certifications",
             "cert1-info": "Udemy | Finished September 2025",
             "cert2-info": "Udemy | Finished September 2024",
